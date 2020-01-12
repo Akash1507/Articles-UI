@@ -21,7 +21,6 @@ class ArticleDetail extends React.Component {
     const articleId = this.props.match.params.articleId;
     axios.delete(`http://127.0.0.1:8000/api/${articleId}`);
     this.props.history.push("/");
-    this.forceUpdate();
   };
   render() {
     return (
